@@ -39,7 +39,7 @@
   },
   "autoload": {
     "psr-4": {
-      "UniSharp\\LaravelFilemanager\\": "src/"
+      "FeiLongCui\\LaravelFileManager\\": "src/"
     }
   },
   "autoload-dev": {
