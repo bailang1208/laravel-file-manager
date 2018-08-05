@@ -1,6 +1,6 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger;
+namespace FeiLongCui\LaravelFileManager;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

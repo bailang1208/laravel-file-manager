@@ -1,6 +1,6 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Controllers;
+namespace FeiLongCui\LaravelFileManager\Controllers;
 
 class DownloadController extends LfmController
 {

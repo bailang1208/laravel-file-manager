@@ -1,11 +1,11 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Controllers;
+namespace FeiLongCui\LaravelFileManager\Controllers;
 
 use Illuminate\Support\Facades\Log;
-use FeiLongCui\LaravelFileManger\Events\ImageIsUploading;
-use FeiLongCui\LaravelFileManger\Events\ImageWasUploaded;
-use FeiLongCui\LaravelFileManger\Lfm;
+use FeiLongCui\LaravelFileManager\Events\ImageIsUploading;
+use FeiLongCui\LaravelFileManager\Events\ImageWasUploaded;
+use FeiLongCui\LaravelFileManager\Lfm;
 
 class UploadController extends LfmController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Controllers;
+namespace FeiLongCui\LaravelFileManager\Controllers;
 
-use FeiLongCui\LaravelFileManger\Lfm;
-use FeiLongCui\LaravelFileManger\LfmPath;
+use FeiLongCui\LaravelFileManager\Lfm;
+use FeiLongCui\LaravelFileManager\LfmPath;
 
 class LfmController extends Controller
 {

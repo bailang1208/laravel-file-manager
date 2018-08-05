@@ -1,6 +1,6 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Events;
+namespace FeiLongCui\LaravelFileManager\Events;
 
 class FolderIsRenaming
 {

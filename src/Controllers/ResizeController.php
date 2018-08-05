@@ -1,10 +1,10 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Controllers;
+namespace FeiLongCui\LaravelFileManager\Controllers;
 
 use Intervention\Image\Facades\Image;
-use FeiLongCui\LaravelFileManger\Events\ImageIsResizing;
-use FeiLongCui\LaravelFileManger\Events\ImageWasResized;
+use FeiLongCui\LaravelFileManager\Events\ImageIsResizing;
+use FeiLongCui\LaravelFileManager\Events\ImageWasResized;
 
 class ResizeController extends LfmController
 {

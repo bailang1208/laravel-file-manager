@@ -1,10 +1,10 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Controllers;
+namespace FeiLongCui\LaravelFileManager\Controllers;
 
 use Intervention\Image\Facades\Image;
-use FeiLongCui\LaravelFileManger\Events\ImageIsCropping;
-use FeiLongCui\LaravelFileManger\Events\ImageWasCropped;
+use FeiLongCui\LaravelFileManager\Events\ImageIsCropping;
+use FeiLongCui\LaravelFileManager\Events\ImageWasCropped;
 
 class CropController extends LfmController
 {

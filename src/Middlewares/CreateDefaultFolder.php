@@ -1,10 +1,10 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Middlewares;
+namespace FeiLongCui\LaravelFileManager\Middlewares;
 
 use Closure;
-use FeiLongCui\LaravelFileManger\Lfm;
-use FeiLongCui\LaravelFileManger\LfmPath;
+use FeiLongCui\LaravelFileManager\Lfm;
+use FeiLongCui\LaravelFileManager\LfmPath;
 
 class CreateDefaultFolder
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Middlewares;
+namespace FeiLongCui\LaravelFileManager\Middlewares;
 
 use Closure;
-use FeiLongCui\LaravelFileManger\Lfm;
+use FeiLongCui\LaravelFileManager\Lfm;
 
 class MultiUser
 {

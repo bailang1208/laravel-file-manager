@@ -1,13 +1,13 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger;
+namespace FeiLongCui\LaravelFileManager;
 
 use Illuminate\Http\File;
 use Illuminate\Container\Container;
 use Intervention\Image\Facades\Image;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use FeiLongCui\LaravelFileManger\Events\ImageIsUploading;
-use FeiLongCui\LaravelFileManger\Events\ImageWasUploaded;
+use FeiLongCui\LaravelFileManager\Events\ImageIsUploading;
+use FeiLongCui\LaravelFileManager\Events\ImageWasUploaded;
 
 class LfmPath
 {

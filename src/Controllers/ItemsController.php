@@ -1,11 +1,11 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Controllers;
+namespace FeiLongCui\LaravelFileManager\Controllers;
 
-use FeiLongCui\LaravelFileManger\Events\FileIsMoving;
-use FeiLongCui\LaravelFileManger\Events\FileWasMoving;
-use FeiLongCui\LaravelFileManger\Events\FolderIsMoving;
-use FeiLongCui\LaravelFileManger\Events\FolderWasMoving;
+use FeiLongCui\LaravelFileManager\Events\FileIsMoving;
+use FeiLongCui\LaravelFileManager\Events\FileWasMoving;
+use FeiLongCui\LaravelFileManager\Events\FolderIsMoving;
+use FeiLongCui\LaravelFileManager\Events\FolderWasMoving;
 
 class ItemsController extends LfmController
 {

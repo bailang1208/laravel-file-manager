@@ -1,11 +1,11 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Controllers;
+namespace FeiLongCui\LaravelFileManager\Controllers;
 
-use FeiLongCui\LaravelFileManger\Events\ImageIsRenaming;
-use FeiLongCui\LaravelFileManger\Events\ImageWasRenamed;
-use FeiLongCui\LaravelFileManger\Events\FolderIsRenaming;
-use FeiLongCui\LaravelFileManger\Events\FolderWasRenamed;
+use FeiLongCui\LaravelFileManager\Events\ImageIsRenaming;
+use FeiLongCui\LaravelFileManager\Events\ImageWasRenamed;
+use FeiLongCui\LaravelFileManager\Events\FolderIsRenaming;
+use FeiLongCui\LaravelFileManager\Events\FolderWasRenamed;
 
 class RenameController extends LfmController
 {

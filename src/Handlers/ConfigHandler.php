@@ -1,6 +1,6 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Handlers;
+namespace FeiLongCui\LaravelFileManager\Handlers;
 
 class ConfigHandler
 {

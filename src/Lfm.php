@@ -1,12 +1,12 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger;
+namespace FeiLongCui\LaravelFileManager;
 
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use FeiLongCui\LaravelFileManger\Middlewares\CreateDefaultFolder;
-use FeiLongCui\LaravelFileManger\Middlewares\MultiUser;
+use FeiLongCui\LaravelFileManager\Middlewares\CreateDefaultFolder;
+use FeiLongCui\LaravelFileManager\Middlewares\MultiUser;
 
 class Lfm
 {

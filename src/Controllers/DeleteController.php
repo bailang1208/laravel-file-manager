@@ -1,9 +1,9 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger\Controllers;
+namespace FeiLongCui\LaravelFileManager\Controllers;
 
-use FeiLongCui\LaravelFileManger\Events\ImageIsDeleting;
-use FeiLongCui\LaravelFileManger\Events\ImageWasDeleted;
+use FeiLongCui\LaravelFileManager\Events\ImageIsDeleting;
+use FeiLongCui\LaravelFileManager\Events\ImageWasDeleted;
 
 class DeleteController extends LfmController
 {

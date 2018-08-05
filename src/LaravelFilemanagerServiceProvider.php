@@ -1,6 +1,6 @@
 <?php
 
-namespace FeiLongCui\LaravelFileManger;
+namespace FeiLongCui\LaravelFileManager;
 
 use Illuminate\Support\ServiceProvider;
 
