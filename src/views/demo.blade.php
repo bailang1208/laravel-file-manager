@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Laravel Filemanager</title>
-  <link rel="shortcut icon" type="image/png" href="{{ asset('vendor/laravel-filemanager/img/72px color.png') }}">
+  <link rel="shortcut icon" type="image/png" href="{!! asset('vendor/laravel-file-manager/img/72px color.png') !!}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
@@ -52,7 +52,7 @@
     <div class="row">
       <div class="col-md-12">
         <h2 class="mt-4">Embed file manager</h2>
-        <iframe src="/laravel-filemanager" style="width: 100%; height: 500px; overflow: hidden; border: none;"></iframe>
+        <iframe src="/laravel-file-manager" style="width: 100%; height: 500px; overflow: hidden; border: none;"></iframe>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
   <script>
-   var route_prefix = "{{ url(config('lfm.url_prefix')) }}";
+   var route_prefix = "{!! url(config('lfm.url_prefix')) !!}";
   </script>
 
   <!-- CKEditor init -->
@@ -71,9 +71,9 @@
     $('textarea[name=ce]').ckeditor({
       height: 100,
       filebrowserImageBrowseUrl: route_prefix + '?type=Images',
-      filebrowserImageUploadUrl: route_prefix + '/upload?type=Images&_token={{csrf_token()}}',
+      filebrowserImageUploadUrl: route_prefix + '/upload?type=Images&_token={!!csrf_token()!!}',
       filebrowserBrowseUrl: route_prefix + '?type=Files',
-      filebrowserUploadUrl: route_prefix + '/upload?type=Files&_token={{csrf_token()}}'
+      filebrowserUploadUrl: route_prefix + '/upload?type=Files&_token={!!csrf_token()!!}'
     });
   </script>
 
@@ -114,7 +114,7 @@
   </script>
 
   <script>
-    {!! \File::get(base_path('vendor/unisharp/laravel-filemanager/public/js/stand-alone-button.js')) !!}
+    {!! \File::get(base_path('vendor/feilongcui/laravel-file-manager/public/js/stand-alone-button.js')) !!}
   </script>
   <script>
     $('#lfm').filemanager('image', {prefix: route_prefix});
@@ -134,7 +134,7 @@
 
       // Define function to open filemanager window
       var lfm = function(options, cb) {
-          var route_prefix = (options && options.prefix) ? options.prefix : '/laravel-filemanager';
+          var route_prefix = (options && options.prefix) ? options.prefix : '/laravel-file-manager';
           window.open(route_prefix + '?type=' + options.type || 'file', 'FileManager', 'width=900,height=600');
           window.SetUrl = cb;
       };
@@ -147,7 +147,7 @@
               tooltip: 'Insert image with filemanager',
               click: function() {
 
-                  lfm({type: 'image', prefix: '/laravel-filemanager'}, function(url, path) {
+                  lfm({type: 'image', prefix: '/laravel-file-manager'}, function(url, path) {
                       context.invoke('insertImage', url);
                   });
 

@@ -12,5 +12,5 @@
   var o = (par && par.CKEDITOR) ? par : ((op && op.CKEDITOR) ? op : false);
 
   if (op) window.close();
-  if (o !== false) o.CKEDITOR.tools.callFunction(funcNum, "{{ $file }}");
+  if (o !== false) o.CKEDITOR.tools.callFunction(funcNum, "{!! $file !!}");
 </script>

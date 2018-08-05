@@ -10,7 +10,7 @@ use FeiLongCui\LaravelFileManager\Middlewares\MultiUser;
 
 class Lfm
 {
-    const PACKAGE_NAME = 'laravel-filemanager';
+    const PACKAGE_NAME = 'laravel-file-manager';
     const DS = '/';
 
     protected $config;
@@ -241,10 +241,10 @@ class Lfm
     public static function routes()
     {
         $middleware = [ CreateDefaultFolder::class, MultiUser::class ];
-        $as = 'unisharp.lfm.';
+        $as = 'feilongcui.lfm.';
 
         Route::group(compact('middleware', 'as'), function () {
-            $namespace = '\\UniSharp\\LaravelFilemanager\\Controllers\\';
+            $namespace = '\\FeiLongCui\\LaravelFilemanager\\Controllers\\';
 
             // display main layout
             Route::get('/', [

@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-8" id="containment">
-    <img id="resize" src="{{ $img->url . '?timestamp=' . $img->time }}" height="{{ $height }}" width="{{ $width }}">
+    <img id="resize" src="{!! $img->url . '?timestamp=' . $img->time !!}" height="{!! $height !!}" width="{!! $width !!}">
   </div>
   <div class="col-md-4">
 
@@ -9,45 +9,45 @@
       <tbody>
         @if ($scaled)
         <tr>
-          <td>{{ trans('laravel-filemanager::lfm.resize-ratio') }}</td>
-          <td>{{ number_format($ratio, 2) }}</td>
+          <td>{!! trans('laravel-file-manager::lfm.resize-ratio') !!}</td>
+          <td>{!! number_format($ratio, 2) !!}</td>
         </tr>
         <tr>
-          <td>{{ trans('laravel-filemanager::lfm.resize-scaled') }}</td>
+          <td>{!! trans('laravel-file-manager::lfm.resize-scaled') !!}</td>
           <td>
-            {{ trans('laravel-filemanager::lfm.resize-true') }}
+            {!! trans('laravel-file-manager::lfm.resize-true') !!}
           </td>
         </tr>
         @endif
         <tr>
-          <td>{{ trans('laravel-filemanager::lfm.resize-old-height') }}</td>
-          <td>{{ $original_height }}px</td>
+          <td>{!! trans('laravel-file-manager::lfm.resize-old-height') !!}</td>
+          <td>{!! $original_height !!}px</td>
         </tr>
         <tr>
-          <td>{{ trans('laravel-filemanager::lfm.resize-old-width') }}</td>
-          <td>{{ $original_width }}px</td>
+          <td>{!! trans('laravel-file-manager::lfm.resize-old-width') !!}</td>
+          <td>{!! $original_width !!}px</td>
         </tr>
         <tr>
-          <td>{{ trans('laravel-filemanager::lfm.resize-new-height') }}</td>
+          <td>{!! trans('laravel-file-manager::lfm.resize-new-height') !!}</td>
           <td><span id="height_display"></span></td>
         </tr>
         <tr>
-          <td>{{ trans('laravel-filemanager::lfm.resize-new-width') }}</td>
+          <td>{!! trans('laravel-file-manager::lfm.resize-new-width') !!}</td>
           <td><span id="width_display"></span></td>
         </tr>
       </tbody>
     </table>
 
-    <button class="btn btn-primary" onclick="doResize()">{{ trans('laravel-filemanager::lfm.btn-resize') }}</button>
-    <button class="btn btn-info" onclick="loadItems()">{{ trans('laravel-filemanager::lfm.btn-cancel') }}</button>
+    <button class="btn btn-primary" onclick="doResize()">{!! trans('laravel-file-manager::lfm.btn-resize') !!}</button>
+    <button class="btn btn-info" onclick="loadItems()">{!! trans('laravel-file-manager::lfm.btn-cancel') !!}</button>
 
-    <input type="hidden" id="img" name="img" value="{{ $img->name }}">
-    <input type="hidden" name="ratio" value="{{ $ratio }}"><br>
-    <input type="hidden" name="scaled" value="{{ $scaled }}"><br>
-    <input type="hidden" id="original_height" name="original_height" value="{{ $original_height }}"><br>
-    <input type="hidden" id="original_width" name="original_width" value="{{ $original_width }}"><br>
-    <input type="hidden" id="height" name="height" value="{{ $height }}"><br>
-    <input type="hidden" id="width" name="width" value="{{ $width }}">
+    <input type="hidden" id="img" name="img" value="{!! $img->name !!}">
+    <input type="hidden" name="ratio" value="{!! $ratio !!}"><br>
+    <input type="hidden" name="scaled" value="{!! $scaled !!}"><br>
+    <input type="hidden" id="original_height" name="original_height" value="{!! $original_height !!}"><br>
+    <input type="hidden" id="original_width" name="original_width" value="{!! $original_width !!}"><br>
+    <input type="hidden" id="height" name="height" value="{!! $height !!}"><br>
+    <input type="hidden" id="width" name="width" value="{!! $width !!}">
 
   </div>
 </div>

@@ -4,8 +4,8 @@
 |--------------------------------------------------------------------------
 | Documentation for this config :
 |--------------------------------------------------------------------------
-| online  => http://unisharp.github.io/laravel-filemanager/config
-| offline => vendor/unisharp/laravel-filemanager/docs/config.md
+| online  => http://feilongcui.github.io/laravel-file-manager/config
+| offline => vendor/feilongcui/laravel-file-manager/docs/config.md
 */
 
 return [
@@ -20,7 +20,7 @@ return [
     'middlewares' => ['web', 'auth'],
 
     // The url to this package. Change it if necessary.
-    'url_prefix' => 'laravel-filemanager',
+    'url_prefix' => 'laravel-file-manager',
 
     // Use relative paths (without domain)
     'relative_paths' => false,
