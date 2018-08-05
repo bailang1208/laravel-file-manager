@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 /**
  * Class LaravelFilemanagerServiceProvider.
  */
-class LaravelFilemanagerServiceProvider extends ServiceProvider
+class LaravelFileManagerServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
