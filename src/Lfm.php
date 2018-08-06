@@ -244,7 +244,7 @@ class Lfm
         $as = 'feilongcui.lfm.';
 
         Route::group(compact('middleware', 'as'), function () {
-            $namespace = '\\FeiLongCui\\LaravelFilemanager\\Controllers\\';
+            $namespace = '\\FeiLongCui\\LaravelFileManager\\Controllers\\';
 
             // display main layout
             Route::get('/', [
