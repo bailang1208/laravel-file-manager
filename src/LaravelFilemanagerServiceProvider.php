@@ -2,10 +2,11 @@
 
 namespace FeiLongCui\LaravelFileManager;
 
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class LaravelFilemanagerServiceProvider.
+ * Class LaravelFileManagerServiceProvider.
  */
 class LaravelFileManagerServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,10 @@ class LaravelFileManagerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if (Config::get('lfm.use_package_routes')) {
+            include __DIR__ . '/routes.php';
+        }
+
         $this->loadTranslationsFrom(__DIR__.'/lang', 'laravel-file-manager');
 
         $this->loadViewsFrom(__DIR__.'/views', 'laravel-file-manager');

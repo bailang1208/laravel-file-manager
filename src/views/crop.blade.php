@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-8">
     <div class="crop-container">
-      <img src="{{ $img->url . '?timestamp=' . $img->time }}" class="img img-responsive">
+      <img src="{{ $img->url . '?timestamp=' . $img->updated }}" class="img img-responsive">
     </div>
   </div>
   <div class="col-md-4">
@@ -30,9 +30,9 @@
       <br>
       <br>
 
-      <button class="btn btn-primary" onclick="performCrop()">{!! trans('laravel-file-manager::lfm.btn-crop') !!}</button>
-      <button class="btn btn-primary" onclick="performCropNew()">{!! trans('laravel-file-manager::lfm.btn-copy-crop') !!}</button>
-      <button class="btn btn-info" onclick="loadItems()">{!! trans('laravel-file-manager::lfm.btn-cancel') !!}</button>
+      <button class="btn btn-primary" onclick="performCrop()">{{ trans('laravel-file-manager::lfm.btn-crop') }}</button>
+      <button class="btn btn-primary" onclick="performCropNew()">{{ trans('laravel-file-manager::lfm.btn-copy-crop') }}</button>
+      <button class="btn btn-info" onclick="loadItems()">{{ trans('laravel-file-manager::lfm.btn-cancel') }}</button>
       <form id='cropForm'>
         <input type="hidden" id="img" name="img" value="{{ $img->name }}">
         <input type="hidden" id="working_dir" name="working_dir" value="{{ $working_dir }}">

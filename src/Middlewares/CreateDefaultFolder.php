@@ -3,19 +3,11 @@
 namespace FeiLongCui\LaravelFileManager\Middlewares;
 
 use Closure;
-use FeiLongCui\LaravelFileManager\Lfm;
-use FeiLongCui\LaravelFileManager\LfmPath;
+use FeiLongCui\LaravelFileManager\Traits\LfmHelpers;
 
 class CreateDefaultFolder
 {
-    private $lfm;
-    private $helper;
-
-    public function __construct()
-    {
-        $this->lfm = app(LfmPath::class);
-        $this->helper = app(Lfm::class);
-    }
+    use LfmHelpers;
 
     public function handle($request, Closure $next)
     {
@@ -27,10 +19,16 @@ class CreateDefaultFolder
 
     private function checkDefaultFolderExists($type = 'share')
     {
-        if (! $this->helper->allowFolderType($type)) {
+        if ($type === 'user' && ! $this->allowMultiUser()) {
             return;
         }
 
-        $this->lfm->dir($this->helper->getRootFolder($type))->createFolder();
+        if ($type === 'share' && ! $this->allowShareFolder()) {
+            return;
+        }
+
+        $path = $this->getRootFolderPath($type);
+
+        $this->createFolderByPath($path);
     }
 }
